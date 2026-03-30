@@ -4,18 +4,18 @@
     box-sizing: border-box;
 }
 
+
+
 .playwrite-dk-uloopet-guides-regular {
   font-family: "Playwrite DK Uloopet Guides", cursive;
   font-weight: 400;
   font-style: normal;
 }
 
-
 p {
     font-size: 16px;
     font-family: "Playwrite DK Uloopet Guides", cursive;
     line-height: 1.6;
-    color: cornflowerblue;
     background: linear-gradient(
     90deg,
     red,
@@ -26,11 +26,40 @@ p {
     indigo,
     violet
   );
-  background-size: 100%; /* controls repetition */
+  background-size: 100%; 
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: moveColors 3s linear infinite;
   @keyframes moveColors {
   0% { background-position: 0% }
   100% { background-position: 200% }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Logo left, links right */
+  align-items: center;            /* Vertical centering */
+  padding: 0rem 2rem;
+  background-color: #111;
+}
+
+.logo {
+  
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem; /* Spacing between links */
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
 }
